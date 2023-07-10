@@ -1,28 +1,13 @@
-# FULL STACK COURSE 2023
+## Chapter 1 - Introduction to React & Setup
 
   
+- **Assignment 1** : If we delete `node_modules`. How to run our app again successfully ?
 
-Hi, This is **CoderDost Youtube Channel** Full Stack Development Course [Course Link ](https://youtube.com/coderdost),
 
-  
+- **Assignment 2** : How to remove double `console.logs` from React ? [ it is not needed in real life to remove them, its just an assignment problem ].  [ *Hint: Some special Component at top level is of App is causing it* ]. We explore more about  - why this is needed in later videos.
 
-You can **download code** from here via :
+### Special Assignments ==============
 
-1. Git Commands
+- **Assignment 3** : Create a Page with multiple React Apps. Both React Apps should be independent of each other.
 
-- use `git clone <repository_url>`
-
-- checkout branch according to video `git checkout react-1` [e.g. for chapter-1]
-
-- run `npm install` inside the root directory before running the code
-
-  
-
-2. If you are not comfortable with git, directly download the branch as Zip.
-
-- Choose branch related to the Video e.g. `react-1` [e.g. for chapter-1]
-
-- run `npm install` inside the root directory before running the code
-
-  
-  
+- **Assignment 4** : Try to build a react app using other toolchains like `Vite`

@@ -1,0 +1,11 @@
+if we delete our node modules and w want to start out app using npm statrt we need to run command npm install which will install all the packages from the package.json file
+
+q2
+in react when we wrap our element with <React.StrictMode> then it checks for additional wearning to help identify the bugs
+However, in production mode (when the app is built and deployed for actual usage), strict mode is automatically disabled, and you will not see the duplicated console logs.
+it intentionally invokes component lifexyle and hooks twice
+
+Special Assign
+
+//q3
+
