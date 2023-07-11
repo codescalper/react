@@ -1,0 +1,9 @@
+.name span{
+ background-color: yellow;  
+ padding: 10px;
+ border-radius: 10px;
+}
+
+.name{
+    text-align: center;
+}

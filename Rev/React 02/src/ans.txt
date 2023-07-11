@@ -1,0 +1,11 @@
+Some lke recap points
+Now you know almost everything about JSX:
+
+    *JSX attributes inside quotes are passed as strings.*
+    *Curly braces let you bring JavaScript logic and variables into your markup.
+    *They work inside the JSX tag content or immediately after = in attributes.*
+    *{{ and }} is not special syntax: it’s a JavaScript object tucked inside JSX curly braces.*
+
+Objects are not valid as a React child
+-- you'll have to destructure the Objects
+

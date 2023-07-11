@@ -1,28 +1,27 @@
-# FULL STACK COURSE 2023
+## Chapter 2 -   Components - JSX and Props
 
-  
+ 
+- **Assignment 1** :  Create a simple React app for **RESUME Builder**. It will be static website. You have to make components like **Resume** as top level and under it - **Skills**, **Education**, **Experience** etc as components.  All resume data will be under 1 big JavaScript object like which you can us in components via props. You can fix the number of items in **Skills**, **Education**, **Experience** or any section. Example you can say that only 3 experience items is allowed.
 
-Hi, This is **CoderDost Youtube Channel** Full Stack Development Course [Course Link ](https://youtube.com/coderdost),
+  ```js 
+   resume = {
+      experience : [ { year:2012, company:'xyz', role:'something' }],
+      education:[ ],
+      skills : [ 'react js', 'node js']
+      .....
+      ...
+      }
+  ```
 
-  
+   > You can choose any simple HTML layout and convert it to React Components 
+ 
+   Example Link : [ Resume HTML ](https://codepen.io/emzarts/pen/OXzmym)
 
-You can **download code** from here via :
+  ### Special Assignments ==============
 
-1. Git Commands
-
-- use `git clone <repository_url>`
-
-- checkout branch according to video `git checkout react-1` [e.g. for chapter-1]
-
-- run `npm install` inside the root directory before running the code
-
-  
-
-2. If you are not comfortable with git, directly download the branch as Zip.
-
-- Choose branch related to the Video e.g. `react-1` [e.g. for chapter-1]
-
-- run `npm install` inside the root directory before running the code
-
-  
-  
+- **Assignment 2** : Create a Parent Component called **Border** which can provide some CSS border to any component nested into it. [Hint : You will need to use `children` props here
+  ```jsx
+   < Border> 
+         < Component > 
+   < Border />
+  ```

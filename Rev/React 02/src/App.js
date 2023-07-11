@@ -1,26 +1,34 @@
-import './App.css';
-import Video from './components/Video';
+import React from 'react'
+import Video from './components/Video'
+import './App.css'
 
-function App() {
-  let obj = {
-    title: 'React JS tutorial',
-    views: '999K',
-    time: '1 year ago',
-    channel: 'Coder Dost',
-  };
-  return (
-    <div className="App">
-      <div>Videos</div>
-      <Video {...obj}></Video>
-      <Video title="Node JS tutorial" views="100K" time="1 month ago"></Video>
-      <Video
-        title="Mongo DB tutorial"
-        views="1M"
-        time="1 month ago"
-        channel="Coder Dost"
-      ></Video>
-    </div>
-  );
+const video1={
+  title:'Hello World',
+   views:'3000',
+    time:'3:00'
 }
 
-export default App;
+function App() {
+  return (
+    <div className='App'>
+     
+    {/* <Video title='Hello World' views='3000' time='3:00' />  */}
+    {/* Let's say that there is an object which you want to pass as  prop you can do that by using spread operator */}
+
+    <Video {...video1} /> {/* Using Spread Operator */}
+    <Video title='Namaste Guys' views='5460' time='2:47' />
+    
+    </div>
+  )
+}
+
+export default App
+
+// export default function Gallery() {
+//   // ...
+// }
+
+// // ✅ Declare components at the top level
+// function Profile() {
+//   // ...
+// }

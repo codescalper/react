@@ -1,11 +1,12 @@
 import './Video.css';
-
-function Video({title,channel="Coder Dost",views,time}) {
+// function Video(props) {
+  // console.log(props) //will give you an object
+function Video({title,channel="Mayank Singh",views,time}) { // Always destructre the object here //Channel name is defualt 
   return (
       <>
       <div className='container'>
       <div className="pic">
-      <img src="http://placeimg.com/160/90/1" alt="Katherine Johnson" />
+      <img src="https://picsum.photos/160/90"/>
       </div>
       <div className="title">{title}</div>
       <div className="channel">{channel}</div>
