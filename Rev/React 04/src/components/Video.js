@@ -1,7 +1,8 @@
 import './Video.css';
+import PlayButton from './PlayButton';
 // function Video(props) {
   // console.log(props) //will give you an object
-function Video({title,channel='Mayank Singh',views,time,verified}) { // Always destructre the object here //Channel name is defualt 
+function Video({title,channel='Mayank Singh',views,time,verified,children}) { // Always destructre the object here //Channel name is defualt 
 
   // if(verified){
   //     channel = 'Mayank Singh ✅';
@@ -20,7 +21,11 @@ function Video({title,channel='Mayank Singh',views,time,verified}) { // Always d
       <div className="views">
         {views} views <span>.</span> {time}
       </div>
+      <div>
+        {children}
       </div>
+      </div>
+
       </>
   );
 }

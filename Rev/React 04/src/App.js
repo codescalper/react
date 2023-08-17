@@ -4,6 +4,8 @@ import './App.css'
 import vid from './data/data'
 import List from './components/List'
 import PlayButton from './components/PlayButton'
+import Counter from './components/Counter'
+
 
 const video1={
   title:'Hello World',
@@ -20,40 +22,37 @@ function App() {
 
     <Video {...video1} /> {/* Using Spread Operator */}
     <Video title='Namaste Guys' views='5460' verified={true} time='2:47' />
-    {
-      vid.map(video=><Video
-      key={video.id}
-      title={video.title}
-      views={video.views}
-      time={video.time}
-      channel = {video.channel}
-      verified={video.verified}
-      />)
-    }
+    {vid.map((video) => (
+        <Video
+          key={video.id}
+          title={video.title}
+          views={video.views}
+          time={video.time}
+          channel={video.channel}
+          verified={video.verified}
+          id={video.id}
+        >
+          <PlayButton
+            onPlay={() => console.log('Playing..',video.title)}
+            onPause={() => console.log('Paused..',video.title)}
+          >
+            {video.title}
+          </PlayButton>
+        </Video>
+      ))}
 
     <div style={{clear:'both'}}>
       {/* <PlayButton  onPress={()=>console.log('Play')}>Play</PlayButton>
       <PlayButton onPress={()=>alert('Paused')}>Pause</PlayButton> */}
 
       {/* Now Adding Play and Pause functionality in on button */}
-
-      <PlayButton onPlay={()=>console.log('Playing')} onPause={()=>{console.log("Pausing")}}>Play</PlayButton>
+      {/* <PlayButton onPlay={()=>console.log('Playing')} onPause={()=>{console.log("Pausing")}}>Hello</PlayButton> */}
+      
     </div>
 
-    {/* < List layout="numbered" items={items}/> 
-    < List layout="alpha"  items={items}/> 
-    < List layout="bullet"   items={items}/> */}
+    <Counter></Counter>
     </div>
   ) 
 }
 
 export default App
-
-  // export default function Gallery() {
-//   // ...
-// }
-
-// // ✅ Declare components at the top level
-// function Profile() {
-//   // ...
-// }
