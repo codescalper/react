@@ -5,6 +5,7 @@ import vid from './data/data'
 import List from './components/List'
 import PlayButton from './components/PlayButton'
 import Counter from './components/Counter'
+import Assignment from './components/Assignment'
 
 
 const video1={
@@ -51,6 +52,7 @@ function App() {
     </div>
 
     <Counter></Counter>
+    <Assignment/>
     </div>
   ) 
 }
