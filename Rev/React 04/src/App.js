@@ -3,6 +3,7 @@ import Video from './components/Video'
 import './App.css'
 import vid from './data/data'
 import List from './components/List'
+import PlayButton from './components/PlayButton'
 
 const video1={
   title:'Hello World',
@@ -29,6 +30,16 @@ function App() {
       verified={video.verified}
       />)
     }
+
+    <div style={{clear:'both'}}>
+      {/* <PlayButton  onPress={()=>console.log('Play')}>Play</PlayButton>
+      <PlayButton onPress={()=>alert('Paused')}>Pause</PlayButton> */}
+
+      {/* Now Adding Play and Pause functionality in on button */}
+
+      <PlayButton onPlay={()=>console.log('Playing')} onPause={()=>{console.log("Pausing")}}>Play</PlayButton>
+    </div>
+
     {/* < List layout="numbered" items={items}/> 
     < List layout="alpha"  items={items}/> 
     < List layout="bullet"   items={items}/> */}

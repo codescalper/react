@@ -17,4 +17,27 @@ function Avatar(props) {
   // ...
 }
 
+If you want to give a prop a default value to fall back on when no value is specified, you can do it with the destructuring by putting = and the default value right after the parameter:
+
+function Avatar({ person, size = 100 }) {
+  // ...
+}
+
+
+This example illustrates that a component may receive different props over time. Props are not always static! Here, the time prop changes every second, and the color prop changes when you select another color. Props reflect a component’s data at any point in time, rather than only in the beginning
+
+
+props are immutable—a term from computer science meaning “unchangeable”. When a component needs to change its props (for example, in response to a user interaction or new data), it will have to “ask” its parent component to pass it different props
+
+
+
+Recap to props
+To pass props, add them to the JSX, just like you would with HTML attributes.
+To read props, use the function Avatar({ person, size }) destructuring syntax.
+You can specify a default value like size = 100, which is used for missing and undefined props.
+You can forward all props with <Avatar {...props} /> JSX spread syntax, but don’t overuse it!
+Nested JSX like <Card><Avatar /></Card> will appear as Card component’s children prop.
+Props are read-only snapshots in time: every render receives a new version of props.
+You can’t change props. When you need interactivity, you’ll need to set state.
+
 
